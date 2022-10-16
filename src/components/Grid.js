@@ -1,15 +1,37 @@
-import ImageDisplay from './ImageDisplay'
+import ImageViewer from './ImageViewer'
+import { useEffect, useState } from 'react'
+import '../styles/grid.css';
 
-export default function Grid(props) {
+export default function Grid( {props} ) {
+  const propsLength = Object.keys(props).length
+  const [imagesPerLoad] = useState(40)
+  const [gridImages, setGridImages] = useState([])
 
-    var images = []
-    for (var i = 0; i < Object.keys(props).length; i += 1) {
-        images.push(<ImageDisplay key={i} {...props[i]} />)
+  const populate = () => {
+    const indexIni = gridImages.length
+    let indexFi = indexIni + imagesPerLoad
+    if (indexFi > propsLength) indexFi = propsLength
+    
+    const images = []
+    for (let i = indexIni; i < indexFi; i += 1) {
+      images.push(<ImageViewer key={i} {...props[i]} />)
     }
 
-    return (
-        <div className="calendar">
-            {images}
-        </div>
-    )
+    setGridImages(currentImages => {
+      return currentImages.concat(images)
+    })
+  }
+
+  useEffect(() => {
+    populate()
+  }, [])
+
+  return (
+    <div className="main">
+      <div className="image-grid">
+        {gridImages}
+      </div>        
+      {gridImages.length < propsLength && <button className='more-images' onClick={populate}>MORE IMAGES</button>}
+    </div>
+  )
 }

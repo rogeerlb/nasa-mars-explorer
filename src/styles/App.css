@@ -1,22 +1,20 @@
 .App {
   text-align: center;
   display: flex;
-}
-
-img {
-  height: 99.63vh;
-  object-fit: contain;
-}
-
-.image-viewer {
-  width: 70%;
+  flex-direction: column;
+  background-color: black;
+  align-items: center;
+  height: 100%;
 }
 
 .param-selector {
-  width: 30%;
   display: flex;
   flex-direction: column;
+  position: fixed;
+  background-color: white;
+  width: 70%;
 }
+
 form {
   display: flex;
   flex-direction: column;
