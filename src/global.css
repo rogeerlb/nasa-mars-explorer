@@ -1,0 +1,19 @@
+@import url("./styles/App.css");
+@import url("./styles/index.css");
+
+/* FORM */
+@import url("./styles/switch.css");
+@import url("./styles/form.css");
+@import url("react-datepicker/dist/react-datepicker.css");
+
+/* GRID */
+@import url("./styles/grid.css");
+
+/* IMAGE VIEWER */
+@import url("./styles/image-viewer.css");
+
+/* LOADING */
+@import url("./styles/loading.css");
+
+/* FOOTER */
+@import url("./styles/footer.css");

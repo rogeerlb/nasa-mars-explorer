@@ -5,8 +5,8 @@
 }
 
 .main {
-  width: 70%;
-  margin-top: 170px;
+  width: 90%;
+  margin-top: 70px;
   margin-bottom: 80px;
   height: 100%;
   margin-left: auto;
@@ -17,6 +17,17 @@
   width: 50%;
   padding: 10px;
   margin: 30px;
+  font-weight: 600;
+  border: none;
+  font-size: 16px;
+  border-left: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.more-images:hover {
+  background: rgb(220, 220, 220);
+  box-shadow: 0 0 5px -2px white;
 }
 
 @media (max-width: 1281px) {

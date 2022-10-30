@@ -1,0 +1,85 @@
+.param-selector {
+  position: fixed;
+  width: auto;
+}
+
+.date-selector {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+}
+
+.camera-selector {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  margin: 0 5px;
+}
+
+input[type="text"] {
+  width: 100px;
+  height: 30px;
+  margin-left: 0px;
+  display: inline-block;
+  border: 1px solid #e0e0e0;
+  border-left: none;
+  border-radius: 0 6px 6px 0;
+  box-sizing: border-box;
+  outline: none;
+  text-align: center;
+}
+
+select {
+  width: 100px;
+  height: 30px;
+  margin-left: 0px;
+  display: inline-block;
+  border: 1px solid #e0e0e0;
+  border-left: none;
+  border-radius: 0 6px 6px 0;
+  box-sizing: border-box;
+  outline: none;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  background: dimgrey;
+  flex-direction: row;
+  border-radius: 0 0 10px 10px;
+  padding: 10px;
+}
+
+form button {
+  background: rgb(50 76 126);
+  width: 75px;
+  height: 30px;
+  font-weight: 600;
+  border: none;
+  border-left: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+}
+
+form button:hover {
+  background: rgb(43 66 108);
+  box-shadow: 0px 0px 6px -2px rgb(50 76 126);
+}
+
+.camera-label {
+  margin: 0px;
+  width: 80px;
+  height: 30px;
+  background: #e0e0e0;
+  border-radius: 6px 0 0 6px;
+}
+
+.camera-label p {
+  margin: 0;
+  position: absolute;
+  font-size: 14px;
+  transform: translate(15px, 6px);
+}

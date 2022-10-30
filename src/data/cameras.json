@@ -1,0 +1,12 @@
+[
+    {"value": "all", "name": "All cameras"},
+    {"value": "fhaz", "name": "FHAZ"},
+    {"value": "rhaz", "name": "RHAZ"},
+    {"value": "mast", "name": "MAST"},
+    {"value": "chemcam", "name": "CHEMCAM"},
+    {"value": "mahli", "name": "MAHLI"},
+    {"value": "mardi", "name": "MARDI"},
+    {"value": "navcam", "name": "NAVCAM"},
+    {"value": "pancam", "name": "PANCAM"},
+    {"value": "minites", "name": "MINITES"}
+  ]

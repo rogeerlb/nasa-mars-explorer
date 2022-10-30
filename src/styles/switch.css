@@ -1,0 +1,76 @@
+.btn-sol-switch {
+  display: inline-block;
+  margin: 0px;
+  position: relative;
+  width: fit-content;
+  font-size: 13px;
+  color: #424242;
+  font-weight: 500;
+}
+
+.btn-sol-switch-inner {
+  margin: 0px;
+  width: 130px;
+  height: 30px;
+  background: #e0e0e0;
+  border-radius: 26px 0 0 26px;
+  position: relative;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.btn-sol-switch-inner:before {
+  content: attr(data-on);
+  position: absolute;
+  font-size: 12px;
+  font-weight: 500;
+  top: 7px;
+  right: 25px;
+}
+
+.btn-sol-switch-inner:after {
+  content: attr(data-off);
+  width: 70px;
+  height: 16px;
+  background: #fff;
+  border-radius: 26px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0px 0px 6px -2px #111;
+  padding: 5px 0px;
+}
+
+.btn-sol-switch input[type="checkbox"] {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  margin: 0px;
+}
+
+input[type="checkbox"]:hover + .btn-sol-switch-inner:after {
+  box-shadow: 0px 0px 4px 3px rgb(50 76 126);
+}
+
+input[type="checkbox"]:checked + .btn-sol-switch-inner {
+  background: #e0e0e0;
+  color: #424242;
+}
+
+input[type="checkbox"]:checked + .btn-sol-switch-inner:after {
+  content: attr(data-on);
+  left: 58px;
+  border-radius: 26px 0 0 26px;
+}
+
+input[type="checkbox"]:checked + .btn-sol-switch-inner:before {
+  content: attr(data-off);
+  right: auto;
+  left: 20px;
+}

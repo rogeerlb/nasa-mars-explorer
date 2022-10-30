@@ -1,6 +1,5 @@
-import ImageViewer from "../ImageViewer/ImageViewer"
+import ImageViewer from "./ImageViewer"
 import { useEffect, useState } from "react"
-import "./grid.css"
 
 const IMAGES_PER_LOAD = 40
 

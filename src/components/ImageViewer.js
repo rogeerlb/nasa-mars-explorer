@@ -1,5 +1,3 @@
-import "./image-viewer.css"
-
 export default function ImageViewer({ image }) {
   return (
     <div className="image-viewer">
