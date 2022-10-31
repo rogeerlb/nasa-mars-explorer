@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <div id="footer">
-      FOOTER
+      <p>@ 2022 RLB</p>
     </div>
   )
 }

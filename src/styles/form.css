@@ -83,3 +83,21 @@ form button:hover {
   font-size: 14px;
   transform: translate(15px, 6px);
 }
+
+@media (max-width: 550px) {
+  form {
+    flex-direction: column;
+  }
+
+  .camera-selector {
+    margin: 5px 0;
+  }
+
+  .camera-label {
+    width: 130px;
+  }
+
+  form button {
+    width: 230px;
+  }
+}

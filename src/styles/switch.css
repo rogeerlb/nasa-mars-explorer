@@ -74,3 +74,13 @@ input[type="checkbox"]:checked + .btn-sol-switch-inner:before {
   right: auto;
   left: 20px;
 }
+
+@media (max-width: 550px) {
+  .btn-sol-switch-inner {
+    border-radius: 6px 0 0 6px;
+  }
+
+  .btn-sol-switch-inner:after {
+    border-radius: 6px 26px 26px 6px;
+  }
+}
