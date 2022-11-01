@@ -1,4 +1,4 @@
-.btn-sol-switch {
+.date-selector__switch {
   display: inline-block;
   margin: 0px;
   position: relative;
@@ -8,7 +8,7 @@
   font-weight: 500;
 }
 
-.btn-sol-switch-inner {
+.date-selector__switch-inner {
   margin: 0px;
   width: 130px;
   height: 30px;
@@ -19,7 +19,7 @@
   display: block;
 }
 
-.btn-sol-switch-inner:before {
+.date-selector__switch-inner:before {
   content: attr(data-on);
   position: absolute;
   font-size: 12px;
@@ -28,7 +28,7 @@
   right: 25px;
 }
 
-.btn-sol-switch-inner:after {
+.date-selector__switch-inner:after {
   content: attr(data-off);
   width: 70px;
   height: 16px;
@@ -43,7 +43,7 @@
   padding: 5px 0px;
 }
 
-.btn-sol-switch input[type="checkbox"] {
+.date-selector__switch input[type="checkbox"] {
   cursor: pointer;
   width: 100%;
   height: 100%;
@@ -54,33 +54,33 @@
   margin: 0px;
 }
 
-input[type="checkbox"]:hover + .btn-sol-switch-inner:after {
+input[type="checkbox"]:hover + .date-selector__switch-inner:after {
   box-shadow: 0px 0px 4px 3px rgb(50 76 126);
 }
 
-input[type="checkbox"]:checked + .btn-sol-switch-inner {
+input[type="checkbox"]:checked + .date-selector__switch-inner {
   background: #e0e0e0;
   color: #424242;
 }
 
-input[type="checkbox"]:checked + .btn-sol-switch-inner:after {
+input[type="checkbox"]:checked + .date-selector__switch-inner:after {
   content: attr(data-on);
   left: 58px;
   border-radius: 26px 0 0 26px;
 }
 
-input[type="checkbox"]:checked + .btn-sol-switch-inner:before {
+input[type="checkbox"]:checked + .date-selector__switch-inner:before {
   content: attr(data-off);
   right: auto;
   left: 20px;
 }
 
 @media (max-width: 550px) {
-  .btn-sol-switch-inner {
+  .date-selector__switch-inner {
     border-radius: 6px 0 0 6px;
   }
 
-  .btn-sol-switch-inner:after {
+  .date-selector__switch-inner:after {
     border-radius: 6px 26px 26px 6px;
   }
 }

@@ -1,50 +1,4 @@
-.param-selector {
-  position: fixed;
-  width: auto;
-}
-
-.date-selector {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: fit-content;
-}
-
-.camera-selector {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: fit-content;
-  margin: 0 5px;
-}
-
-input[type="text"] {
-  width: 100px;
-  height: 30px;
-  margin-left: 0px;
-  display: inline-block;
-  border: 1px solid #e0e0e0;
-  border-left: none;
-  border-radius: 0 6px 6px 0;
-  box-sizing: border-box;
-  outline: none;
-  text-align: center;
-}
-
-select {
-  width: 100px;
-  height: 30px;
-  margin-left: 0px;
-  display: inline-block;
-  border: 1px solid #e0e0e0;
-  border-left: none;
-  border-radius: 0 6px 6px 0;
-  box-sizing: border-box;
-  outline: none;
-  text-align: center;
-}
-
-form {
+.params-selector__form {
   display: flex;
   background: dimgrey;
   flex-direction: row;
@@ -52,7 +6,86 @@ form {
   padding: 10px;
 }
 
-form button {
+.params-selector {
+  position: fixed;
+  width: auto;
+}
+
+/* DATE SELECTOR */
+.date-selector {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+}
+
+.react-datepicker-wrapper {
+  width: auto !important;
+}
+
+input[type="text"] {
+  width: 100px;
+  height: 30px;
+  margin-left: 0px;
+  display: inline-block;
+  border: 2px solid #e0e0e0;
+  border-left: none;
+  border-radius: 0 6px 6px 0;
+  box-sizing: border-box;
+  outline: none;
+  text-align: center;
+}
+
+/* CAMERA SELECTOR */
+.camera-selector {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 5px;
+}
+
+.camera-selector__label {
+  margin: 0px;
+  width: 80px;
+  height: 30px;
+  background: #e0e0e0;
+  border-radius: 6px 0 0 6px;
+}
+
+.camera-selector__label p {
+  margin: 0;
+  position: absolute;
+  font-size: 14px;
+  transform: translate(15px, 6px);
+}
+
+.camera-selector__select {
+  width: 100px;
+  height: 30px;
+  margin-left: 0px;
+  display: inline-block;
+  border: 2px solid #e0e0e0;
+  border-left: none;
+  border-radius: 0 6px 6px 0;
+  box-sizing: border-box;
+  outline: none;
+  text-align: center;
+}
+
+/* INFO */
+.params-selector__form--info {
+  height: 17px;
+  width: 15px;
+  margin-left: 0px;
+  background-color: #e0e0e0;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: default;
+  border-radius: 0 50% 50% 0;
+}
+
+/* SEARCH */
+.search-button {
   background: rgb(50 76 126);
   width: 75px;
   height: 30px;
@@ -64,28 +97,13 @@ form button {
   color: white;
 }
 
-form button:hover {
+.search-button:hover {
   background: rgb(43 66 108);
   box-shadow: 0px 0px 6px -2px rgb(50 76 126);
 }
 
-.camera-label {
-  margin: 0px;
-  width: 80px;
-  height: 30px;
-  background: #e0e0e0;
-  border-radius: 6px 0 0 6px;
-}
-
-.camera-label p {
-  margin: 0;
-  position: absolute;
-  font-size: 14px;
-  transform: translate(15px, 6px);
-}
-
-@media (max-width: 550px) {
-  form {
+@media (max-width: 560px) {
+  .params-selector__form {
     flex-direction: column;
   }
 
@@ -93,11 +111,11 @@ form button:hover {
     margin: 5px 0;
   }
 
-  .camera-label {
+  .camera-selector__label {
     width: 130px;
   }
 
-  form button {
-    width: 230px;
+  .search-button {
+    width: 245px;
   }
 }
