@@ -73,7 +73,7 @@ input[type="text"] {
 }
 
 /* INFO */
-.params-selector__form--info {
+.date-selector__info, .camera-selector__info {
   height: 17px;
   width: 15px;
   margin-left: 0px;
@@ -118,4 +118,41 @@ input[type="text"] {
   .search-button {
     width: 245px;
   }
+
+  .date-selector__info-tooltip, .camera-selector__info-tooltip {
+    width: 245px;
+  }
 }
+
+/* Tooltip text */
+.date-selector__info-tooltip, .camera-selector__info-tooltip {
+  visibility: hidden;
+  width: 525px;
+  height: 134px;
+  top: 43px;
+  background-color: #1c1c1cc4;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  left: 10px;
+}
+
+.date-selector__info:hover + .date-selector__info-tooltip {
+  visibility: visible;
+}
+
+.date-selector__info:active + .date-selector__info-tooltip {
+  visibility: visible;
+}
+
+.camera-selector__info:hover + .camera-selector__info-tooltip {
+  visibility: visible;
+}
+
+.camera-selector__info:active + .camera-selector__info-tooltip {
+  visibility: visible;
+}
+

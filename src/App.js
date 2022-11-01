@@ -46,8 +46,9 @@ function App() {
               {formParams.solType &&
                 <input type="text" placeholder='1000' onChange={event => setFormParams({...formParams, sol: event.target.value})} />
               }
-              <span class="params-selector__form--info">?</span>
-            </div>
+              <span className="date-selector__info">?</span>
+              <span className="date-selector__info-tooltip">Tooltip text</span>
+            </div>            
             <div className="camera-selector">
               <div className="camera-selector__label">
                 <p>Camera</p>
@@ -57,7 +58,8 @@ function App() {
                   <option key={camera.id} value={camera.value}>{camera.name}</option>
                 ))}
               </select>
-              <span class="params-selector__form--info">?</span>
+              <span className="camera-selector__info">?</span>
+              <span className="camera-selector__info-tooltip">Tooltip text</span>
             </div>          
             <button className="search-button">Search</button>
           </form>
