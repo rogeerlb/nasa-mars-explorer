@@ -1,4 +1,4 @@
-[
+const cameras = [
   { "id": 1, "value": "all", "name": "All cameras" },
   { "id": 2, "value": "fhaz", "name": "FHAZ" },
   { "id": 3, "value": "rhaz", "name": "RHAZ" },
@@ -10,3 +10,5 @@
   { "id": 9, "value": "pancam", "name": "PANCAM" },
   { "id": 10, "value": "minites", "name": "MINITES" }
 ]
+
+export default cameras;

@@ -4,13 +4,13 @@ import Loading from './components/Loading'
 import Footer from './components/Footer'
 import DatePicker from 'react-datepicker'
 import getPhotos from './services/getPhotos'
+import cameras from './data/cameras'
 
 function App() {
   const [gridData, setGridData] = useState('')
   const [formParams, setFormParams] = useState({sol: "", solType: false, camera: "all", earthDate: new Date()})
   const [loading, setLoading] = useState(false)
   const [lastCall, setLastCall] = useState()
-  const cameras = require('./data/cameras.json')
 
   const handleSubmit = event => {
     event.preventDefault()
